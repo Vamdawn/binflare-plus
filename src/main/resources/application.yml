@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: binflare-plus
+  profiles:
+    active: dev
+
+server:
+  port: 9000
