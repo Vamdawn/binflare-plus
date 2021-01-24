@@ -1,0 +1,4 @@
+spring:
+  datasource:
+    url: ENC(JKPVLcOFdeTgiGRNxh6W7ZyBwooS2DFv1ahg+ifxTPdWYO/WTNebFJulatmfJbqUPpcK/xgQi7KCDSBLsoW44I9WSIiceUvf7mjx2hLS2D4/pgjuZ4P1pXnBeoW3bo6azOdQq+e1XCVH6t/ytgGtiMST3rfhIR14MqCXZM3HHrp46GtprwOrSfANC4uQw6oLYzyuLQHXNARIVS8ZYc5fd40qRCMbRqOY+yNKLpGIbE6CRJYU5NEKSvl9xzMnr9HT)
+    driver-class-name: com.mysql.cj.jdbc.Driver
