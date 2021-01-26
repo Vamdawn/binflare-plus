@@ -10,3 +10,6 @@ server:
 jasypt:
   encryptor:
     password: ${JASYPT_ENCRYPTOR_KEY}
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
