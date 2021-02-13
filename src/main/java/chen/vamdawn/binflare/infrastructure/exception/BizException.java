@@ -8,25 +8,25 @@ package chen.vamdawn.binflare.infrastructure.exception;
  */
 public class BizException extends RuntimeException {
 
-    private final int httpCode;
-    private final int bizCode;
+    private final int status;
+    private final int code;
 
-    public BizException(int httpCode, int bizCode, String message) {
+    public BizException(int status, int code, String message) {
         super(message);
-        this.httpCode = httpCode;
-        this.bizCode = bizCode;
+        this.status = status;
+        this.code = code;
     }
 
-    public int getHttpCode() {
-        return httpCode;
+    public int getStatus() {
+        return status;
     }
 
-    public int getBizCode() {
-        return bizCode;
+    public int getCode() {
+        return code;
     }
 
     @Override
     public String toString() {
-        return "BizException(httpCode=" + getHttpCode() + ", bizCode=" + getBizCode() + ", message=" + getMessage() + ")";
+        return "BizException(status=" + getStatus() + ", code=" + getCode() + ", message=" + getMessage() + ")";
     }
 }
