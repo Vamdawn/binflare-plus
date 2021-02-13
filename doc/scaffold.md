@@ -1,4 +1,4 @@
-# Prject Scraffold
+# Project Scraffold
 
 ## Domains
 
