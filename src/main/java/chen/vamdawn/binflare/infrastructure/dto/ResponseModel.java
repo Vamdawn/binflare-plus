@@ -68,4 +68,5 @@ public class ResponseModel<T> implements Serializable {
 
         return new ResponseModel<>(status, code, message, null);
     }
+
 }
