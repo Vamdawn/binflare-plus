@@ -121,7 +121,7 @@ public class LoggingRequestRecord implements Serializable {
      * @return json string
      */
     public String json() {
-        return JsonUtils.toJsonString(this);
+        return JsonUtils.serialize(this);
     }
 
     private Object tryConvertJson(byte[] buffer, String characterEncoding) {

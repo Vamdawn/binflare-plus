@@ -29,12 +29,29 @@ public class JsonUtils {
      * @param object java object
      * @return json string
      */
-    public static String toJsonString(Object object) {
-        String result = null;
+    public static String serialize(Object object) {
+        String value = null;
         try {
-            result = MAPPER.writeValueAsString(object);
+            value = MAPPER.writeValueAsString(object);
         } catch (JsonProcessingException ignored) {
         }
-        return result;
+        return value;
+    }
+
+    /**
+     * Json String => Java Object
+     *
+     * @param value json string
+     * @param clazz java class of object
+     * @param <T>   parameterized type of java object
+     * @return java object
+     */
+    public static <T> T deserialize(String value, Class<T> clazz) {
+        T object = null;
+        try {
+            object = MAPPER.readValue(value, clazz);
+        } catch (JsonProcessingException ignored) {
+        }
+        return object;
     }
 }
